@@ -43,7 +43,7 @@ public class FolderController {
         return folderserv.updateFolder(folder_id, folder);
     }
 
-    @DeleteMapping("/deleteFolder")
+    @DeleteMapping("/deleteFolder/{folder_id}")
     public String deleteFolder(@PathVariable int folder_id){
         return folderserv.deleteFolder(folder_id);
     }

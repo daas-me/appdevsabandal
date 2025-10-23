@@ -38,7 +38,7 @@ public class ActivityLogController {
         return actlogserv.updateActivityLog(log_id, newActivityLog);
     }
 
-    @DeleteMapping("/deleteActivityLog")    
+    @DeleteMapping("/deleteActivityLog/{folder_id}")    
     public String deleteActivityLog(@PathVariable int log_id){
         return actlogserv.deleteActivityLog(log_id);
     }
